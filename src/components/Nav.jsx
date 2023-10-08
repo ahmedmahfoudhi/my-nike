@@ -6,6 +6,7 @@ const Nav = () => {
     const [openModal, setopenModal] = useState(false)
     const changeOpenModal = () => {
         console.log('clicked')
+        console.log(openModal)
         setopenModal(oldState => {
             setopenModal(!oldState)
         })
