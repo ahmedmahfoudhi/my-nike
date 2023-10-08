@@ -20,7 +20,7 @@ const Nav = () => {
             <ul className={`flex-1 flex justify-center 
             items-center gap-16 max-lg:flex-col max-lg:items-start
             max-lg:gap-9 max-lg:absolute max-lg:mt-4 max-lg:py-5
-            max-lg:top-[90%] ${!openModal ? 'max-lg:top-[-400%]' :''}
+            ${!openModal ? 'max-lg:top-[-400%]' :'max-lg:top-[90%]'}
             max-lg:bg-white max-lg:w-[90%] max-lg:z-10 duration-500
             `}>
                 {navLinks.map((navLink,index) => (
