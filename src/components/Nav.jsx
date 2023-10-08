@@ -5,6 +5,7 @@ import { useState } from 'react';
 const Nav = () => {
     const [openModal, setopenModal] = useState(false)
     const changeOpenModal = () => {
+        console.log('clicked')
         setopenModal(oldState => {
             setopenModal(!oldState)
         })
@@ -31,21 +32,11 @@ const Nav = () => {
                 ))}
             </ul>
             <div>
-                <img src={openModal ? close : hamburger} alt="Hamburger" width={25} height={25} className='hidden max-lg:block max-lg:self-end' onClick={changeOpenModal}/>
+                <img src={openModal ? close : hamburger} alt={`${openModal ? 'close':'hamburger'}`} width={25} height={25} className='hidden max-lg:block max-lg:self-end cursor-pointer' onClick={changeOpenModal}/>
             </div>
             
         </nav>
-        {/*}
-        <div className={`${!openModal ? 'hidden': ''} bg-coral-red max-lg:max-w-screen max-lg:max-h-screen flex justify-center items-center z-1 lg:hidden`}>
-                <ul className=''>
-                    {navLinks.map((navLink,index) => (
-                        <li key={index}>
-                            <a href={navLink.href} className='font-montserrat leading-normal text-lg text-white-400'>{navLink.label}</a>
-                        </li>
-                    ))}
-                </ul>
-        </div>  
-        {*/}
+        
     </header>
   )
 }
