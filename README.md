@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a landing page for Nike which is fully **responsive** across difference devices with an **easy-to-navigate user interface**, it is built using React, Vite, and Tailwind CSS. The main goal of this project is to serve as a practice environment for honing Tailwind and frontend development skills. It's intended for learning purposes only.
+This project is a landing page for Nike which is fully **responsive** across different devices with an **easy-to-navigate user interface**, it is built using React, Vite, and Tailwind CSS. The main goal of this project is to serve as a practice environment for honing Tailwind and front-end development skills. It's intended for learning purposes only.
 
 ## Live Demo
 
@@ -34,7 +34,7 @@ npm install
 ## Tech Stack
 - React: UI library
 - Vite: Build tool and dev server
-- Tailwind CSS: Utiltiy-first CSS framework
+- Tailwind CSS: Utility-first CSS framework
 - Netlify: Deployment and hosting
 
 ## Best Practices
